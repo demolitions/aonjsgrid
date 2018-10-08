@@ -1,0 +1,47 @@
+html,body {
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+.container {
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  white-space:nowrap;
+  overflow-y:hidden;
+  overflow-x:auto;
+}
+.quadrants {
+  width:100%;
+  height:100%;
+}
+.quadrants>.aonJsGrid {
+  margin:0;
+  height:100%;
+  display: inline-block;
+  border-right: solid 3px black;
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+.quadrants>.aonJsGrid:last-child {
+  border-right:none;
+}
+.aonJsGridItem {
+  border:solid 1px gray;
+  background:rgba(200,200,200,.8);
+}
+.aonJsGrid .aonJsGridItem{
+  transition: ease-in-out .1s;
+}
+.aonJsGridItem.away {
+  opacity:.3;
+}
+.aonJsGridItem.shadowed {
+  filter: brightness(0.5);
+}
+.aonJsGridItem.away.shadowed {
+  background-color:#00ff00;
+  opacity:1;
+}

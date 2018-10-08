@@ -1,0 +1,3 @@
+$('.aonJsGrid').aonJsGrid({
+  editable: true
+});
